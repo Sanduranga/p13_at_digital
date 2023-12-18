@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper1 {
+  @apply w-full h-[100vh] mx-auto my-0 relative;
+}
+
+.wrapper2 {
+  @apply 3xl:min-w-[1064px] lg:min-w-[896px] my-0 mx-auto flex flex-col gap-20;
+}
