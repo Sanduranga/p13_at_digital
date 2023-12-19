@@ -1,8 +1,8 @@
-import { logo } from "../assets";
+import { logo, menuIcon } from "../assets";
 
 const Navbar = () => {
   return (
-    <nav className="fixed h-[77px] w-full 3xl:px-20 py-[26px] lg:px-[60px] md:px-10 px-5 bg-bluish_purple z-40">
+    <nav className="py-[26px] lg:px-20 md:px-[60px] sm:px-10 px-5 bg-bluish_purple z-40">
       <div className="flex justify-between items-center">
         <a href="#" className="relative w-[238.89px] h-[25px]">
           <img
@@ -11,7 +11,16 @@ const Navbar = () => {
             alt="logo.png"
           />
         </a>
-        <ul className="flex gap-7 font-['Inter'] text-white text-sm font-medium">
+
+        <a href="#">
+          <img
+            src={menuIcon}
+            className="w-[31px h-[24px] sm:hidden block"
+            alt="menuIcon.png"
+          />
+        </a>
+
+        <ul className="sm:flex hidden gap-7 font-['Inter'] text-white text-sm font-medium">
           <li>
             <a href="#">SERVICES</a>
           </li>

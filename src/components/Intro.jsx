@@ -2,8 +2,8 @@ import { image1, image2 } from "../assets";
 
 const Intro = () => {
   return (
-    <section className="w-full flex flex-col">
-      <div className="lg:hidden md:block w-full px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400 flex-col justify-start items-start flex">
+    <section className="">
+      <div className="md:hidden flex flex-col justify-start items-start w-full px-5 sm:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400">
         <div className="self-stretch text-white text-5xl font-bold font-['Inter'] mb-[20px] capitalize leading-[48px]">
           We crush your competitors, goals, and sales records - without the B.S.
         </div>
@@ -13,57 +13,59 @@ const Intro = () => {
       </div>
 
       <div className="wrapper2">
-        <div className="3xl:w-[1064px] 3xl:h-[414px] lg:w-[896px] lg:h-[348px] justify-start items-center gap-[108px] inline-flex">
+        <div className="flex sm:flex-row flex-col justify-start items-center md:gap-[20px] lg:gap-[108px] gap-[20px]">
           <img
-            className="3xl:w-[414px] 3xl:h-[414px] lg:w-[346px] lg:h-[346px]"
+            className="lg:w-[414px] lg:h-[414px] md:w-[346px] md:h-[346px] w-[275px] h-[275px]"
             src={image2}
           />
-          <div className="w-[542px] flex-col justify-start items-start gap-5 inline-flex">
-            <div className="flex-col justify-start items-start gap-3 flex">
-              <div className="w-[507px] text-violet-700 text-[27px] font-semibold font-['Poppins'] leading-[33px] tracking-wide">
+          <div className="flex flex-col justify-start sm:items-start items-center gap-5">
+            <div className="flex sm:justify-start justify-center">
+              <div className="text-violet-700 text-[27px] font-semibold font-['Poppins'] leading-[33px] tracking-wide text-center sm:text-start">
                 Web & Mobile App Development
               </div>
             </div>
-            <div className="self-stretch text-black text-base font-normal font-['Inter']">
+            <p className="self-stretch text-black text-base text-center sm:text-start font-normal font-['Inter']">
               Your web and mobile Apps are pieces of the puzzle to grow your
               business. We use frameworks which tailor content and engagement
               methods to respond to different intents shown by your potential
               customers who interact with your business online.
-            </div>
-            <div className="px-5 py-3 bg-orange-400 rounded justify-start items-start gap-2 inline-flex">
+            </p>
+            <a
+              href="#"
+              className="px-5 py-3 bg-orange-400 rounded justify-start items-start gap-2 inline-flex"
+            >
               <div className="text-white text-sm font-bold font-['Inter'] uppercase leading-[14px]">
                 LEARN MORE
               </div>
-            </div>
+            </a>
           </div>
         </div>
-        <div>
-          <div></div>
-          <div></div>
-        </div>
 
-        <div className="3xl:w-[1064px] 3xl:h-[414px] lg:w-[896px] lg:h-[348px] justify-start items-center gap-[108px] inline-flex">
-          <div className="w-[542px] flex-col justify-start items-start gap-5 inline-flex">
-            <div className="flex-col justify-start items-start gap-3 flex">
-              <div className="w-[507px] text-violet-700 text-[27px] font-semibold font-['Poppins'] leading-[33px] tracking-wide">
+        <div className="flex sm:flex-row flex-col-reverse justify-start items-center lg:gap-[108px] gap-[20px]">
+          <div className="flex flex-col justify-start sm:items-start items-center gap-5">
+            <div className="flex sm:justify-start justify-center">
+              <div className="text-violet-700 text-[27px] font-semibold font-['Poppins'] leading-[33px] tracking-wide text-center sm:text-start">
                 Digital Strategy Consulting
               </div>
             </div>
-            <div className="self-stretch text-black text-base font-normal font-['Inter']">
+            <p className="self-stretch text-black text-center sm:text-start text-base font-normal font-['Inter']">
               Your digital strategy should complement the overall marketing
               strategy of the company. In online marketing, each component will
               never work in isolation and every business needs a different mix.
               We provide a clear concept and strategic overview to find the most
               efficient model for your business.
-            </div>
-            <div className="px-5 py-3 bg-orange-400 rounded justify-start items-start gap-2 inline-flex">
+            </p>
+            <a
+              href="#"
+              className="px-5 py-3 bg-orange-400 rounded justify-start items-start gap-2 inline-flex"
+            >
               <div className="text-white text-sm font-bold font-['Inter'] uppercase leading-[14px]">
                 LEARN MORE
               </div>
-            </div>
+            </a>
           </div>
           <img
-            className="3xl:w-[414px] 3xl:h-[416px] lg:w-[346px] lg:h-[348px]"
+            className="lg:w-[414px] lg:h-[416px] md:w-[346px] md:h-[348px] w-[275px] h-[276px]"
             src={image1}
           />
         </div>

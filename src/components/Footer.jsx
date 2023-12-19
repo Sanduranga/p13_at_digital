@@ -2,9 +2,9 @@ import { logo } from "../assets";
 
 const Footer = () => {
   return (
-    <div className="w-full 3xl:min-w-[1440px] lg:min-w-[1080px] 3xl:mt-[100px] lg:mt-20 pt-10 pb-10 px-20 bg-violet-700 flex flex-col items-center gap-10">
-      <div className="flex justify-between items-start w-full">
-        <div className="w-[413px] flex-col justify-start items-start gap-5 inline-flex">
+    <footer className="lg:px-20 md:px-[60px] sm:px-10 px-5 pb-5 pt-10 bg-violet-700 flex flex-col items-center gap-10">
+      <div className="flex md:justify-between flex-col md:flex-row md:gap-[112px] gap-[60px] items-start w-full">
+        <div className="flex flex-col justify-start items-start gap-5">
           <div className="w-[238.89px] h-[25px] relative">
             <img
               src={logo}
@@ -17,7 +17,7 @@ const Footer = () => {
             business results.
           </div>
         </div>
-        <div className="flex justify-between items-start gap-32">
+        <div className="flex justify-between sm:flex-row flex-col items-start lg:gap-32 md:gap-5 gap-10 sm:gap-[79px]">
           <div className="w-[197px] flex-col justify-start items-start gap-3 inline-flex">
             <div className="text-white text-[21px] font-semibold font-['Inter']">
               Our Technologies
@@ -45,31 +45,19 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* <div className="h-[25px] flex-col justify-start items-center gap-2 flex">
-        <div className="self-stretch h-[0px] border border-white"></div>
-        <div className="justify-center items-center gap-4 inline-flex">
-          <div className="text-white text-sm font-medium font-['Inter'] capitalize">
-            Privacy Policy
-          </div>
-          <div className="w-4 h-[0px] origin-top-left rotate-90 border border-white"></div>
-          <div className="text-white text-sm font-medium font-['Inter'] capitalize">
-            Terms & Conditions
-          </div>
-        </div>
-      </div> */}
       <div className="w-[630px] h-[25px] flex-col justify-start items-center gap-2 inline-flex">
         <div className="self-stretch h-[0px] border border-white"></div>
         <div className="justify-center items-center gap-4 inline-flex">
           <div className="text-white text-sm font-medium font-['Inter'] capitalize">
             Privacy Policy
           </div>
-          <div className="w-4 h-[0px] origin-top-left rotate-90 border border-white"></div>
+          <div className="w-4 h-[0px] rotate-90 border border-white"></div>
           <div className="text-white text-sm font-medium font-['Inter'] capitalize">
             Terms & Conditions
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
