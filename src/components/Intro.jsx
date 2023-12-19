@@ -10,7 +10,7 @@ const Intro = () => {
           We crush your competitors, goals, and sales records - without the B.S.
         </div>
         <a href="#">
-          <Button />
+          <Button>Get free consultation</Button>
         </a>
       </div>
 

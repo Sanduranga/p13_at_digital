@@ -19,7 +19,7 @@ const Header = () => {
             B.S.
           </div>
           <a href="#">
-            <Button />
+            <Button>Get free consultation</Button>
           </a>
         </div>
       </div>
