@@ -1,18 +1,21 @@
 import { image1, image2 } from "../assets";
+import Button from "./Button";
 
 const Intro = () => {
   return (
     <>
+      {/* This is Frame 497 and only appears when it is less than 768px */}
       <div className="md:hidden flex flex-col justify-start items-start w-full px-5 sm:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400">
         <div className="self-stretch text-white text-5xl font-bold font-['Inter'] mb-[20px] capitalize leading-[48px]">
           We crush your competitors, goals, and sales records - without the B.S.
         </div>
-        <div className="px-5 py-3 bg-orange-400 rounded inline-flex text-white text-sm font-bold font-['Inter'] uppercase leading-[14px]">
-          Get free consultation
-        </div>
+        <a href="#">
+          <Button />
+        </a>
       </div>
 
       <div className="wrapper2">
+        {/* wrapper1 & wrapper2 is in index.css */}
         <div className="flex sm:flex-row flex-col justify-start items-center md:gap-[20px] lg:gap-[108px] gap-[20px]">
           <img
             className="lg:w-[414px] lg:h-[414px] md:w-[346px] md:h-[346px] w-[275px] h-[275px]"

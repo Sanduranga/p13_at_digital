@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="sm:w-[630px] w-[335px] h-[25px] flex-col justify-start items-center gap-2 inline-flex">
+      <div className="sm:w-[630px] max-w-fit h-[25px] flex flex-col gap-2 justify-start items-center">
         <div className="self-stretch h-[0px] border border-white"></div>
         <div className="justify-center items-center gap-4 inline-flex">
           <a
