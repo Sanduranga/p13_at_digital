@@ -7,7 +7,6 @@ export default {
         bluish_purple: "#6B3CC9",
       },
       screens: {
-        "3xl": "1440px",
         lg: "1200px",
       },
     },

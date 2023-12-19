@@ -2,7 +2,7 @@ import { image1, image2 } from "../assets";
 
 const Intro = () => {
   return (
-    <section className="">
+    <>
       <div className="md:hidden flex flex-col justify-start items-start w-full px-5 sm:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400">
         <div className="self-stretch text-white text-5xl font-bold font-['Inter'] mb-[20px] capitalize leading-[48px]">
           We crush your competitors, goals, and sales records - without the B.S.
@@ -70,7 +70,7 @@ const Intro = () => {
           />
         </div>
       </div>
-    </section>
+    </>
     // <div className="w-[1064px] h-[414px] justify-start items-center gap-[108px] inline-flex">
     //   <img
     //     className="w-[414px] h-[414px]"
