@@ -1,11 +1,19 @@
+import { useContext } from "react";
 import { image1, image2 } from "../assets";
 import Button from "./Button";
+import { NavContext } from "./NavContext";
 
 const Intro = () => {
+  const { navData } = useContext(NavContext);
+
   return (
     <>
       {/* This is Frame 497 and only appears when it is less than 768px */}
-      <div className="md:hidden flex flex-col justify-start items-start w-full px-5 sm:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400">
+      <div
+        className={` ${
+          navData ? "blur" : " blur-none"
+        } md:hidden flex flex-col justify-start items-start w-full px-5 sm:px-10 pt-6 pb-8 bg-gradient-to-l from-cyan-500 to-green-400`}
+      >
         <div className="self-stretch text-white text-5xl font-bold font-['Inter'] mb-[20px] capitalize leading-[48px]">
           We crush your competitors, goals, and sales records - without the B.S.
         </div>
@@ -14,7 +22,7 @@ const Intro = () => {
         </a>
       </div>
 
-      <div className="wrapper2">
+      <div className={`wrapper ${navData ? "blur" : " blur-none"}`}>
         {/* wrapper1 & wrapper2 is in index.css */}
         <div className="flex sm:flex-row flex-col justify-start items-center md:gap-[20px] lg:gap-[108px] gap-[20px]">
           <img

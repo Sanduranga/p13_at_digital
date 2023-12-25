@@ -1,13 +1,16 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { logo, menuIcon } from "../assets";
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+import { NavContext } from "./NavContext";
 
 const Navbar = () => {
   const [mobileNavBtn, setmobileNavBtn] = useState(false);
   const catchScreen = useRef(null);
+  const { updateNavData } = useContext(NavContext);
 
   useEffect(() => {
     const contentElement = catchScreen.current;
+    updateNavData(mobileNavBtn);
 
     if (mobileNavBtn) {
       disableBodyScroll(contentElement);
@@ -34,7 +37,7 @@ const Navbar = () => {
           : "translate-x-full transition-transform"
       }`}
       >
-        <div className="mobile_nav_content">
+        <div className="mobile_nav_content flex flex-col justify-between h-full">
           <ul className="flex flex-col gap-7 font-['Inter'] text-white text-sm font-medium">
             <li>
               <div
@@ -57,6 +60,13 @@ const Navbar = () => {
               <a href="#">CAREERS</a>
             </li>
           </ul>
+          <div className="relative w-[180.89px] h-[20px]">
+            <img
+              src={logo}
+              className="w-[238.89px] h-[36.11px] left-0 top-[-11.11px] absolute"
+              alt="logo.png"
+            />
+          </div>
         </div>
       </div>
 
@@ -65,7 +75,9 @@ const Navbar = () => {
       <a href="#" className="relative w-[238.89px] h-[25px]">
         <img
           src={logo}
-          className="w-[238.89px] h-[36.11px] left-0 top-[-11.11px] absolute"
+          className={` ${
+            mobileNavBtn ? "blur" : "blur-none"
+          } w-[238.89px] h-[36.11px] left-0 top-[-11.11px] absolute`}
           alt="logo.png"
         />
       </a>

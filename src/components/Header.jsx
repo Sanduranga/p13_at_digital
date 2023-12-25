@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import { heroImg } from "../assets";
 import Button from "./Button";
+import { NavContext } from "./NavContext";
 
 const Header = () => {
+  const { navData } = useContext(NavContext);
   return (
-    <header className="mt-[77px]">
+    <header className={`mt-[77px] ${navData ? "blur" : "blur-none"}`}>
       <div className="wrapper1">
         {/* wrapper1 & wrapper2 is in index.css */}
 
