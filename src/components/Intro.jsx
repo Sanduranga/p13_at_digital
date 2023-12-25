@@ -22,7 +22,7 @@ const Intro = () => {
         </a>
       </div>
 
-      <div className={`wrapper ${navData ? "blur" : " blur-none"}`}>
+      <div className={`wrapper2 ${navData ? "blur" : " blur-none"}`}>
         {/* wrapper1 & wrapper2 is in index.css */}
         <div className="flex sm:flex-row flex-col justify-start items-center md:gap-[20px] lg:gap-[108px] gap-[20px]">
           <img

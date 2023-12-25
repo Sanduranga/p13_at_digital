@@ -37,7 +37,7 @@ const Navbar = () => {
           : "translate-x-full transition-transform"
       }`}
       >
-        <div className="mobile_nav_content flex flex-col justify-between h-full">
+        <div className="mobile_nav_content flex flex-col justify-between min-w-[100vh] h-full">
           <ul className="flex flex-col gap-7 font-['Inter'] text-white text-sm font-medium">
             <li>
               <div
@@ -60,7 +60,7 @@ const Navbar = () => {
               <a href="#">CAREERS</a>
             </li>
           </ul>
-          <div className="relative w-[180.89px] h-[20px]">
+          <div className="relative w-[180.89px] h-[20px] mb-5 ml-4">
             <img
               src={logo}
               className="w-[238.89px] h-[36.11px] left-0 top-[-11.11px] absolute"
