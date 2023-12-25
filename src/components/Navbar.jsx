@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
       ref={catchScreen}
-      className="sm:fixed w-full relative top-[77px] flex justify-between items-center min-w-[250px] max-w-full mt-[-77px] py-[26px] lg:px-20 md:px-[60px] sm:px-10 px-5 bg-bluish_purple z-40"
+      className="sm:fixed w-full relative top-[77px] flex justify-between items-center min-w-[250px] max-w-full mt-[-77px] py-[26px] lg:px-20 md:px-[60px] sm:px-10 px-5 bg-bluish_purple z-40 overscroll-none"
     >
       {/* this is mobile navigation component**************************** */}
       <div
@@ -70,14 +70,14 @@ const Navbar = () => {
         />
       </a>
 
-      <a href="#">
+      <div>
         <img
           src={menuIcon}
           className="w-[31px] h-[24px] sm:hidden block"
           alt="menuIcon.png"
           onClick={() => setmobileNavBtn(true)}
         />
-      </a>
+      </div>
 
       <ul className="sm:flex hidden gap-7 font-['Inter'] text-white text-sm font-medium">
         <li>
