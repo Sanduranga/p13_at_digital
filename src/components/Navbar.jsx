@@ -30,14 +30,14 @@ const Navbar = () => {
     >
       {/* this is mobile navigation component**************************** */}
       <div
-        className={`sm:hidden absolute top-0 right-0 z-50 bg-bluish_purple w-[250px] h-[100vh] duration-500 p-4
+        className={`sm:hidden absolute top-0 right-0 z-50 overflow-scroll bg-bluish_purple w-[250px] h-[100dvh] duration-500 p-4
       ${
         mobileNavBtn
           ? "translate-x-0 transition-transform"
           : "translate-x-full transition-transform"
       }`}
       >
-        <div className="mobile_nav_content flex flex-col justify-between min-w-[100vh] h-full">
+        <div className="mobile_nav_content flex flex-col justify-between h-full">
           <ul className="flex flex-col gap-7 font-['Inter'] text-white text-sm font-medium">
             <li>
               <div
